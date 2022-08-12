@@ -1,0 +1,12 @@
+DURING = 8
+    A
+    B
+    C
+    E
+    F
+    G
+    H
+    J
+
+AFTER = 0
+    

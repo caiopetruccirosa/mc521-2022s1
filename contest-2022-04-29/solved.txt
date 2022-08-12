@@ -1,0 +1,9 @@
+DURING = 0
+
+AFTER = 6
+    A
+    C
+    E
+    F
+    I
+    G

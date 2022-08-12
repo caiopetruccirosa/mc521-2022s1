@@ -1,0 +1,10 @@
+DURING = 0
+
+AFTER = 7
+    A
+    D
+    F
+    G
+    H
+    I
+    J

@@ -5,34 +5,41 @@
 
 using namespace std;
 
-int main() {_
-    int n;
-    cin >> n;
-
-    vector<int> numbers(n, 0);
-    for (int i = 0; i < n; i++) {
-        cin >> numbers[i];
-    }
-
+bool isJolly(vector<int> numbers) {
     int n = numbers.size();
+    
     vector<bool> dists(n, false);
     for (int i = 0; i < n-1; i++) {
         int dist = abs(numbers[i]-numbers[i+1]);
         if (dist > n || dist < 1 || dists[dist]) {
-            cout << "Not jolly\n";
-            return 0;
+            return false;
         }
         dists[dist] = true;
     }
 
     for (int i = 1; i < n; i++) {
         if (!dists[i]) {
-            cout << "Not jolly\n";
-            return 0;
+            return false;
         }
     }
 
-    cout << "Jolly\n";
+    return true;
+}
+
+int main() {_
+    int n;
+    while (cin >> n) {
+        vector<int> numbers(n, 0);
+        for (int i = 0; i < n; i++) {
+            cin >> numbers[i];
+        }
+
+        if (isJolly(numbers)) {
+            cout << "Jolly\n";
+        } else {
+            cout << "Not jolly\n";
+        }
+    }
 
     return 0;
 }

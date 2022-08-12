@@ -1,0 +1,16 @@
+DURING = 8
+    A
+    B
+    D
+    E
+    F
+    G
+    H
+    I
+
+AFTER = 5
+    C
+    J
+    K
+    L
+    M

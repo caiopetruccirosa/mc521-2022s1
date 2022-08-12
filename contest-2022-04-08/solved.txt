@@ -1,0 +1,8 @@
+DURING = 0
+
+AFTER = 5
+    A
+    D
+    E
+    F
+    G
