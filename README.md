@@ -1,3 +1,3 @@
-# MC521-2022S1
+# mc521-2022s1
 
-Repository containing solutions for problems done in MC521 contests.
+A repository containing solutions for problems done during MC521 (Desafios de Programação I) course contests at Unicamp.
